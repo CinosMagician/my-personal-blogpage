@@ -1,53 +1,12 @@
-*{
-    font-family: Georgia, serif;
-    margin: 0px;
-}
-
-body {
-    background-color: var(--lightCol);
-    color: var(--darkCol);
-    transition: background-color 0.3s ease;
-}
-
-:root {
-    --darkCol: #333;
-    --borderDark: #001111;
-    --lightCol: #f0f0f0;
-    --borderLight: #d0ffff;
-}
-
-h3 {
-    display: block;
-    text-align: end;
-}
-
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
     padding-top: 27.5px;
     padding-bottom: 27.5px;
-    border-style: solid;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-.darkMode {
-    background-color: var(--darkCol);
-    color: var(--lightCol);
-    border-color: var(--borderLight);
 }
 
 .darkMode .formContainer button {
     background-color: var(--lightCol);
     color: var(--darkCol);
     border-color: var(--borderLight);
-}
-
-#modeChange:hover {
-    cursor: pointer;
 }
 
 .container {
@@ -60,12 +19,6 @@ header {
 }
 
 .border {
-    margin: 0px 3px;
-    border-top: 0px;
-    border-style: solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 825px;
     width: 50%;
 }
@@ -113,16 +66,4 @@ header {
     height: 50px;
     background-color: var(--darkCol);
     color: var(--lightCol);
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-#leftContainer {
-    border-left: 0px;
-}
-
-#rightContainer {
-    border-right: 0px;
 }
