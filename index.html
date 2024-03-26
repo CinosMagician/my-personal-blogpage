@@ -23,20 +23,21 @@
         </div>
         
         <div class="border" id="rightContainer">
-            <div class="formContainer">
+            <form class="formContainer" id="blogForm">
                 <h2>What's on your mind?</h2>
                 <h4>Username</h4>
-                <input type="'text">
+                <input type="'text" id="username">
                 <h4>Title</h4>
-                <input type="'text">
+                <input type="'text" id="title">
                 <h4>Content</h4>
-                <textarea></textarea>
-                <button>Submit</button>
-            </div>
+                <textarea id="content"></textarea>
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
         </div>
     
     </section>
 
     <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/form.js"></script>
 </body>
 </html>
