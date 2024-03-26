@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('blogForm');
 
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form submission
+        // Prevent form submission
+        event.preventDefault();
         
         // Collect data from form fields
         const username = document.getElementById('username').value;
@@ -25,8 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Save updated blog posts array back to local storage
         localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
 
-        // Redirect to blog.html
-        console.log(`Move to page`)
+        // Redirect the page to blog.html
         window.location.href = 'blog.html';
     });
 });

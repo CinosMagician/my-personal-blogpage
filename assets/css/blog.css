@@ -56,10 +56,10 @@ header button {
     border-color: var(--borderLight);
 }
 
-.darkMode .formContainer button {
-    background-color: var(--lightCol);
+.darkMode .blogPost div {
+    background-color: var(--darkCol);
     color: var(--darkCol);
-    border-color: var(--borderLight);
+    border-color: var(--borderDark);
 }
 
 #modeChange:hover {
@@ -67,12 +67,31 @@ header button {
 }
 
 .container {
-    margin-top: 4px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     border-style: solid;
     border-bottom: 0px;
     border-left: 0px;
     border-right: 0px;
+    margin-top: 4px;
+}
+
+#blogPostArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow-y: auto;
+    max-height: calc(100vh - 80px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.blogPost {
+    border: 1px solid;
+    padding: 10px;
+    width: 95%;
 }
 
 .border {
@@ -82,7 +101,7 @@ header button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 825px;
+    min-height: 650px;
     width: 100%;
 }
 
@@ -99,38 +118,6 @@ header button {
     font-size: 40px;
 }
 
-.formContainer {
-    display: flex;
-    width: 90%;
-    flex-direction: column;
-}
-
-.formContainer h2 {
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.formContainer h4 {
-    padding-bottom: 10px;
-}
-
-.formContainer input {
-    margin-bottom: 10px;
-}
-
-.formContainer textarea {
-    height: 100px;
-    padding: 10px;
-    margin-bottom: 15px;
-}
-
-.formContainer button {
-    font-weight: bold;
-    height: 50px;
-    background-color: var(--darkCol);
-    color: var(--lightCol);
-}
-
 button:hover {
     cursor: pointer;
 }
@@ -141,4 +128,44 @@ button:hover {
 
 #rightContainer {
     border-right: 0px;
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+    padding: 20px 0px;
+    margin-top: 4px;
+    border-style: solid;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+ul li {
+    font-weight: bold;
+    list-style: none;
+    text-align: start;
+}
+
+ul li a {
+    font-weight: normal;
+}
+
+ul li a:hover {
+    cursor: default;
+}
+
+.blogPost h2 {
+    padding: 2px;
+}
+
+.blogPost p {
+    border-style: solid;
+    border-color: lightgray;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    font-size: 14px;
+    padding-top: 2px;
+    padding-bottom: 20px;
 }
