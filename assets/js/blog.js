@@ -14,8 +14,8 @@ function displayBlogPosts() {
         const contentParagraph = document.createElement('p');
         contentParagraph.textContent = post.content;
 
-        const usernameHeading = document.createElement('h2');
-        usernameHeading.textContent = post.username;
+        const usernameHeading = document.createElement('h5');
+        usernameHeading.textContent = `Posted by: ${post.username}`;
         // appends the children elements to the div
         postDiv.appendChild(titleHeading);
             

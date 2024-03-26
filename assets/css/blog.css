@@ -74,14 +74,17 @@ ul li {
 
 ul li a {
     font-weight: normal;
+    text-decoration: none;
+    color: var(--darkCol);
 }
 
-ul li a:hover {
-    cursor: default;
+.darkMode ul li a {
+    color: var(--lightCol);
 }
 
 .blogPost h2 {
     padding: 2px;
+    font-size: 16px;
 }
 
 .blogPost p {
@@ -93,4 +96,8 @@ ul li a:hover {
     font-size: 14px;
     padding-top: 2px;
     padding-bottom: 20px;
+}
+
+.blogPost h5 {
+    padding: 2px;
 }

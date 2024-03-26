@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const title = document.getElementById('title').value;
         const content = document.getElementById('content').value;
 
+        // Checks to see if any fields are left blank and throws an alert if any aren't.
+        if (!username || !title || !content) {
+            alert('Please fill in all fields.');
+            return;
+        }
+
         // Create blog post object
         const blogPost = {
             username: username,
