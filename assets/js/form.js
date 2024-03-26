@@ -17,16 +17,16 @@ document.addEventListener('DOMContentLoaded', function() {
             content: content
         };
 
-        // Retrieve existing blog posts array from local storage or create new array
+        // Retrieve existing blog posts array from local storage or creates new array
         let blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
 
-        // Add new blog post to the array
+        // Adds the new blog post to the array
         blogPosts.push(blogPost);
 
-        // Save updated blog posts array back to local storage
+        // Saves the updated blog posts array back to local storage
         localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
 
-        // Redirect the page to blog.html
+        // redirects the page to blog.html
         window.location.href = 'blog.html';
     });
 });
