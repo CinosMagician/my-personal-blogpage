@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Posts - My Blog Entry</title>
+    <!-- Linking the style sheets for both the generic styles we have on all pages
+    and the one for this specific page. -->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/blog.css">
 </head>
@@ -10,27 +12,32 @@
 <body>
 
     <header>
+        <!-- This houses the header elements, this includes a title, a back button
+        to return to the previous page and the light/dark mode toggle button -->
         <h1>My First Blog</h1>
         <a href="index.html"><button>⇦ Back</button></a>
         <div id="modeChange">🌑</div>
     </header>
 
+    <!-- This Section houses the container that we use to place in the blog posts with
+    our blog.js scripts using data from the previous page. -->
     <section class="container">
-
-        <div class="border" id="blogPostArea">
-
-        </div>
-    
+        <div class="border" id="blogPostArea"></div>
     </section>
 
     <footer>
+        <!-- The footer element houses elements kept at the bottom of the page
+        such as external links/contact information -->
         Webpage made by Lachlan Hughes
         <ul>
             <li>Portfolio: <a href="https://cinosmagician.github.io/Portfolio-page/">Lachlan Hughes</a></li>
-            <li>Blog: <a>Full-Stack Blog</a></li>
-            <li>Email: <a>sample@email.com</a></li>
+            <li>Blog: <a>Full-Stack Blog</a></li> <!--This has nothing attached to it-->
+            <li>Email: <a>sample@email.com</a></li> <!--This is not a real email-->
         </ul>
     </footer>
+
+    <!-- These are the scripts for the page, one handles the light/dark mode and the other
+    for generation the blog posts from local storage information. -->
     <script src="./assets/js/logic.js"></script>
     <script src="./assets/js/blog.js"></script>
 </body>

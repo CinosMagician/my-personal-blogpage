@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog Entry</title>
+    <!-- Linking the style sheets for both the generic styles we have on all pages
+    and the one for this specific page. -->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/form.css">
 </head>
@@ -10,18 +12,22 @@
 <body>
 
     <header>
+        <!-- This houses the header elements, no title on this page but does have
+        the light/dark mode toggle button -->
         <div></div>
         <div id="modeChange">🌑</div>
     </header>
 
+    <!-- This container houses the flexboxes inside, separating the 2 elements -->
     <section class="container">
-
+        <!-- This Div is for the left container, houseing the image and the words attached to it -->
         <div class="border" id="leftContainer">
             <h1>My First Blog</h1>
             <img src="./assets/images/blogImageFlip.png" alt="Circle image for blog homepage">
-
         </div>
         
+        <!-- This Div houses the right container, with the input form. entering a username
+        a title and the content below -->
         <div class="border" id="rightContainer">
             <form class="formContainer" id="blogForm">
                 <h2>What's on your mind?</h2>
@@ -31,12 +37,16 @@
                 <input type="'text" id="title">
                 <h4>Content</h4>
                 <textarea id="content"></textarea>
+                <!-- This button is to be pressed once the information has been typed out -->
                 <button type="submit" id="submitBtn">Submit</button>
             </form>
         </div>
     
     </section>
 
+    <!-- these are the scripts needed for the page to function, the logic.js handles
+    the light/dark mode for all pages, while the form.js allows our form to collect and 
+    store the data. -->
     <script src="./assets/js/logic.js"></script>
     <script src="./assets/js/form.js"></script>
 </body>

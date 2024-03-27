@@ -25,5 +25,6 @@ if (isDark) {
     toggleDarkMode();
     isDark = !isDark;
     localStorage.setItem('isDark', isDark.toString());
+    modeToggleBtn.textContent = '☀️'
 }
 

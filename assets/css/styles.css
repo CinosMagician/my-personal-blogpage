@@ -1,14 +1,19 @@
+/* This sets the default value for all font to be Geirgua, with serif as a backup
+and set margins to 0px by default */
 *{
     font-family: Georgia, serif;
     margin: 0px;
 }
 
+/* This is setting the style for the body and also to set the transition time when changing
+from light to dark and visa versa */
 body {
     background-color: var(--lightCol);
     color: var(--darkCol);
     transition: background-color 0.3s ease;
 }
 
+/* Sets our color variables to be used throughout the scripts  */
 :root {
     --darkCol: #333;
     --borderDark: #001111;
@@ -16,11 +21,7 @@ body {
     --borderLight: #d0ffff;
 }
 
-h3 {
-    display: block;
-    text-align: end;
-}
-
+/* Sets up our header area */
 header {
     display: flex;
     justify-content: space-between;
@@ -32,17 +33,19 @@ header {
     border-right: 0px;
 }
 
+/* Used for when we want to channg our page to dark mode layout */
 .darkMode {
     background-color: var(--darkCol);
     color: var(--lightCol);
     border-color: var(--borderLight);
 }
 
+/* Gives the cursor pointer when hovering the emote to change modes */
 #modeChange:hover {
     cursor: pointer;
 }
 
-
+/* sets the styles for the inside elements of the flex */
 .border {
     margin: 0px 3px;
     border-top: 0px;
@@ -52,14 +55,17 @@ header {
     align-items: center;
 }
 
+/* Changes the cursor to a pointer when hovering any button element */
 button:hover {
     cursor: pointer;
 }
 
+/* Specific for the left box to remove the left side border */
 #leftContainer {
     border-left: 0px;
 }
 
+/* Specific for the right box to remove the right side border */
 #rightContainer {
     border-right: 0px;
 }

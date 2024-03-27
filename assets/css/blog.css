@@ -1,3 +1,6 @@
+/* This CSS contains the unique changes for the elements on the blog page */
+
+/* This sets the back button properties */
 header button {
     position: relative;
     left: 765px;
@@ -7,21 +10,20 @@ header button {
     color: var(--lightCol);
 }
 
+/* sets the colors to be different when in darkmode */
 .darkMode header button {
-    position: relative;
-    left: 765px;
-    font-weight: bold;
-    height: 30px;
     background-color: var(--lightCol);
     color: var(--darkCol);
 }
 
+/* Sets colors of the div to work when in darkmode */
 .darkMode .blogPost div {
     background-color: var(--darkCol);
     color: var(--darkCol);
     border-color: var(--borderDark);
 }
 
+/* Modifies our container class for use on the blog page as it has a slightly different layout */
 .container {
     display: flex;
     flex-direction: column;
@@ -33,28 +35,31 @@ header button {
     margin-top: 4px;
 }
 
+/* Designates the styling for the blog posting area */
 #blogPostArea {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     overflow-y: auto;
-    max-height: calc(100vh - 80px);
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+/* Used when we make the blog posts via JS and adds this class for the styling */
 .blogPost {
     border: 1px solid;
     padding: 10px;
     width: 95%;
 }
 
+/* Specific changes to the border class for this page */
 .border {
     min-height: 650px;
     width: 100%;
 }
 
+/* Contains styling for our footer element. */
 footer {
     text-align: center;
     align-items: center;
@@ -66,27 +71,32 @@ footer {
     border-right: 0px;
 }
 
+/* Sets the style so we can have bold font for the starting text */
 ul li {
     font-weight: bold;
     list-style: none;
     text-align: start;
 }
 
+/* This sets the text to be normal weight and changes any link into regular text */
 ul li a {
     font-weight: normal;
     text-decoration: none;
     color: var(--darkCol);
 }
 
+/* compatibility for darkmode */
 .darkMode ul li a {
     color: var(--lightCol);
 }
 
+/* Styling used for when we generate our blogposts */
 .blogPost h2 {
     padding: 2px;
     font-size: 16px;
 }
 
+/* Used for the main content styling, used for the title */
 .blogPost p {
     border-style: solid;
     border-color: lightgray;
@@ -98,6 +108,7 @@ ul li a {
     padding-bottom: 20px;
 }
 
+/* Used for username */
 .blogPost h5 {
     padding: 2px;
 }

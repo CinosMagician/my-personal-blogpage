@@ -1,14 +1,17 @@
+/* Used for the header element to match the blog page spacing as there is no title on this page */
 header {
     padding-top: 27.5px;
     padding-bottom: 27.5px;
 }
 
+/* sets the darkmode color changes */
 .darkMode .formContainer button {
     background-color: var(--lightCol);
     color: var(--darkCol);
     border-color: var(--borderLight);
 }
 
+/* Sets our unique values for container class as they do differ from each other */
 .container {
     margin-top: 4px;
     display: flex;
@@ -18,16 +21,19 @@ header {
     border-right: 0px;
 }
 
+/* Along with some slight changes to the border class */
 .border {
     height: 825px;
     width: 50%;
 }
 
+/* This sets the img properties */
 .border img {
     max-width: 100%;
     max-height: 100%;
 }
 
+/* This is setting the values for the text used on top of the image */
 .border h1 {
     position: absolute;
     top: 450px;
@@ -36,34 +42,54 @@ header {
     font-size: 40px;
 }
 
+/* This sets out values for our container housing our form */
 .formContainer {
     display: flex;
     width: 90%;
     flex-direction: column;
 }
 
+/* This sets the values for our h2 elements in the form */
 .formContainer h2 {
     padding-bottom: 10px;
     text-align: center;
 }
 
+/* Sets h4 values in form */
 .formContainer h4 {
     padding-bottom: 10px;
 }
 
+/* Sets the input to have margin on the bottom for spacing */
 .formContainer input {
     margin-bottom: 10px;
 }
 
+/* This defines the textarea element for which we put in our content for our blogpost */
 .formContainer textarea {
     height: 100px;
     padding: 10px;
     margin-bottom: 15px;
 }
 
+/* This styles the submit button which has darkmode compatibility */
 .formContainer button {
     font-weight: bold;
     height: 50px;
     background-color: var(--darkCol);
     color: var(--lightCol);
+}
+
+/* These media quieries help with the text stay with the image */
+@media screen and (max-width: 1440px) {
+    .border h1 {
+        left: 220px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .border h1 {
+        left: 25px;
+        font-size: 26px;
+    }
 }
