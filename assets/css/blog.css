@@ -112,3 +112,47 @@ ul li a {
 .blogPost h5 {
     padding: 2px;
 }
+
+/* Added media Quieries to account for back button getting stuck on the page */
+@media screen and (min-width: 1851px) and (max-width: 1900px) {
+    header button {
+        position: relative;
+        left: 700px;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1850px) {
+    header button {
+        position: relative;
+        left: 515px;
+    }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1400px) {
+    header button {
+        position: relative;
+        left: 365px;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1100px) {
+    header button {
+        position: relative;
+        left: 240px;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 849px) {
+    header button {
+        position: relative;
+        left: 120px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px)  {
+    header button {
+        position: relative;
+        left: 60px;
+    }
+}
